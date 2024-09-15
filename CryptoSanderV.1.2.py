@@ -22,5 +22,3 @@ def Cryptography(text):
 
 crypt_dict = Cryptography(textOne)
 print("".join(crypt_dict.values()))
-
-#print({Cryptography(textOne)})
