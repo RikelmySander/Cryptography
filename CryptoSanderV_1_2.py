@@ -4,7 +4,7 @@ textOne = input("Enter a phrase to be encrypted:")
 
 # make a function for use in another files
 def Cryptography(text):
-    Crypto = dict()
+    Crypto = dict() 
     for Element in text:
         #Conversion test.
             #print("Element: {}".format(Element))
@@ -17,7 +17,7 @@ def Cryptography(text):
         factors = random.randint(5,15)
         shuffled_value = bin(ascii_Value*factors)
         print(f"Private key:{factors}")
-        Crypto[Element] = shuffled_value[2:]
+        Crypto[Element] = shuffled_value[2:] 
     return Crypto
 
 crypt_dict = Cryptography(textOne)
